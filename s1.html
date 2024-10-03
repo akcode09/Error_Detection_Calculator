@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Error Detection Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="s1.css">
+</head>
+<body>
+    <div id="background-animation"></div>
+    <div class="container">
+        <h1>
+            <img src="s.avif" alt="Shield icon" class="method-icon">
+            Error Detection Calculator
+        </h1>
+        <form id="calculator-form">
+            <div class="input-group">
+                <label for="data">Enter Data (DDD):</label>
+                <input type="text" id="data" placeholder="Enter binary or numeric data" required>
+            </div>
+            <div class="input-group">
+                <label for="method">Select Error Detection Method:</label>
+                <select id="method" required>
+                    <option value="crc">Cyclic Redundancy Check (CRC)</option>
+                    <option value="checksum">Checksum</option>
+                    <option value="parity">Parity Check</option>
+                    <option value="hamming">Hamming Code</option>
+                    <option value="luhn">Luhn Algorithm</option>
+                </select>
+            </div>
+            <div id="generator-group" class="input-group">
+                <label for="generator">Enter Generator (G) for CRC:</label>
+                <input type="text" id="generator" placeholder="Enter generator for CRC">
+            </div>
+            <button type="submit" id="calculate-btn">
+                <span id="button-text">Calculate</span>
+                <span id="button-spinner" class="spinner hidden"></span>
+            </button>
+        </form>
+        <div id="result" class="hidden"></div>
+        <div id="error" class="hidden"></div>
+    </div>
+    <script src="s1.js"></script>
+</body>
+</html>
