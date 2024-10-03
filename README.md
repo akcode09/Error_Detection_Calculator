@@ -28,5 +28,5 @@ This project showcases front-end development skills, including form handling, dy
 
 Installation & Usage:
 Clone the repository:
-git clone https://github.com/username/enhanced-error-detection-calculator.git
+git clone https://github.com/akcode09/Error_Detection_Calculator.git
 Open the index.html file in your browser to start using the calculator.
